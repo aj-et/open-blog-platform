@@ -16,5 +16,15 @@
     "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "like_count": 25,
     "share_count": 15
+  },
+  {
+    "date": "2023-05-09",
+    "postID": "XYZ",
+    "userID": "HotDog42",
+    "heading": "Another cool post",
+    "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "like_count": 25,
+    "share_count": 15
   }
+
 ]

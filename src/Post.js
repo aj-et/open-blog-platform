@@ -14,7 +14,7 @@ export default function PostObject(props){
             <div className="like-count"><button id = "like">👍</button>{contentJson.like_count}<label> Likes</label></div>
             <div className="share-count"><button id = "share">⌲</button>{contentJson.share_count}<label> Shares</label></div>
 
-            {document.getElementById(like).addEventListener(click, )}
+            
             </div>
         
         </div>
