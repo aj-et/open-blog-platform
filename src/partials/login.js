@@ -1,9 +1,6 @@
-// Use this to call the function in App.js
-{/* <div className="login-form">
-    {<Login></Login>}
-</div> */}
 
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
 export default function Login() {
 return (
