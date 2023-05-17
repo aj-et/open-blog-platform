@@ -1,0 +1,12 @@
+
+
+.profile-image {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.profile-card {
+    width: 75%;
+    border-radius: 10px;
+    border: 1px solid black;
+}

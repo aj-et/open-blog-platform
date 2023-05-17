@@ -1,0 +1,23 @@
+
+.home-page {
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.blog-site {
+    padding: 5px;
+    background-color: red;
+    width: 100%;
+}
+
+.side-bar {
+    padding: 5px;
+    background-color: skyblue;
+    width: 100%;
+}
+
