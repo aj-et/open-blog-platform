@@ -9,9 +9,9 @@ import Register from './partials/register.js';
 
 import {useEffect, useState} from "react";
 import React from 'react';
-import PostObject from './Post';
+import PostObject from './partials/Post';
 import postData from "./posts.json"
-import Footer from './Footer'
+import Footer from './partials/Footer'
 
 
 
@@ -21,11 +21,12 @@ function App() {
 
   return (
 
-      <NavBar />
-      <HomePage />
+     
 
 
  <div className="App" id="app">
+   <NavBar />
+      <HomePage />
     <section className='forms'>
       <div className="login-form">
         {<Login></Login>}
