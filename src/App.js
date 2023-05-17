@@ -1,4 +1,8 @@
 import './App.css';
+
+import NavBar from './components/navbar';
+import HomePage from './components/home';
+
 import Login from './partials/login.js';
 import Register from './partials/register.js';
 
@@ -10,11 +14,17 @@ import postData from "./posts.json"
 import Footer from './Footer'
 
 
+
 function App() {
 
   
 
   return (
+
+      <NavBar />
+      <HomePage />
+
+
  <div className="App" id="app">
     <section className='forms'>
       <div className="login-form">
@@ -33,6 +43,7 @@ function App() {
       }
 
   </div>
+
 
   );
 }
