@@ -10,7 +10,7 @@ import Register from './partials/register.js';
 import {useEffect, useState} from "react";
 import React from 'react';
 import PostObject from './partials/Post';
-import postData from "./posts.json"
+import postData from "./data/posts.json"
 import Footer from './partials/Footer'
 
 
@@ -42,7 +42,7 @@ function App() {
       postData.map(post =>
         <PostObject contentJson = {post} key = {post.postID}></PostObject>)
       }
-
+    <Footer/>
   </div>
 
 
