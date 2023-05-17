@@ -1,7 +1,4 @@
-// Use this to call the function in App.js
-{/* <div className="login-form">
-    {<Login></Login>}
-</div> */}
+
 
 import React, { useState } from "react";
 
