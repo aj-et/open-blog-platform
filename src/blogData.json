@@ -1,0 +1,50 @@
+{
+    "blogPosts": [
+      {
+        "id": 1,
+        "title": "My First Blog Post",
+        "date": "2023-05-10",
+        "author": "Lamichhane, Prashant",
+        "like_count": 10,
+        "share_count":10,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut leo nec massa blandit suscipit. Donec nec sapien nec sapien vestibulum porttitor. Sed sagittis tellus non ex placerat, sit amet sodales nisl fringilla. Fusce volutpat euismod massa, in viverra orci congue id. Suspendisse commodo eleifend massa, ac sodales quam. "
+      },
+      {
+        "id": 2,
+        "title": "My Second Blog Post",
+        "date": "2023-05-11",
+        "author": "Paramore, Hyrum",
+        "like_count": 10,
+        "share_count":10,
+        "content": "Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed feugiat vitae metus a maximus. Aliquam erat volutpat. Suspendisse bibendum tortor velit, in gravida magna vehicula nec. Praesent posuere lectus at commodo semper. "
+      },
+      {
+        "id": 3,
+        "title": "My Third Blog Post",
+        "date": "2023-05-10",
+        "author": "Reid, Roy",
+        "like_count": 10,
+        "share_count":10,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut leo nec massa blandit suscipit. Donec nec sapien nec sapien vestibulum porttitor. Sed sagittis tellus non ex placerat, sit amet sodales nisl fringilla. Fusce volutpat euismod massa, in viverra orci congue id. Suspendisse commodo eleifend massa, ac sodales quam. "
+      },
+      {
+        "id": 4,
+        "title": "My Fourth Blog Post",
+        "date": "2023-05-11",
+        "author": "Tumbokon, Aaron",
+        "like_count": 10,
+        "share_count":10,
+        "content": "Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed feugiat vitae metus a maximus. Aliquam erat volutpat. Suspendisse bibendum tortor velit, in gravida magna vehicula nec. Praesent posuere lectus at commodo semper. "
+      },
+      {
+        "id": 5,
+        "title": "My Fifth Blog Post",
+        "date": "2023-05-10",
+        "author": "Dhanpal, Radhika",
+        "like_count": 10,
+        "share_count":10,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut leo nec massa blandit suscipit. Donec nec sapien nec sapien vestibulum porttitor. Sed sagittis tellus non ex placerat, sit amet sodales nisl fringilla. Fusce volutpat euismod massa, in viverra orci congue id. Suspendisse commodo eleifend massa, ac sodales quam. "
+      }
+    ]
+  }
+  
