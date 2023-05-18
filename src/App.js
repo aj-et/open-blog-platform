@@ -9,9 +9,15 @@ import AuthStatus from './partials/authStatus';
 
 // import {useEffect, useState} from "react";
 import React from 'react';
+
 import PostObject from './Post';
 import postData from "./posts.json"
 // import Footer from './Footer'
+
+import PostObject from './partials/Post';
+import postData from "./data/posts.json"
+import Footer from './partials/Footer'
+
 
 
 
@@ -21,10 +27,14 @@ function App() {
 
   return (
 
-  <div className="App" id="app">
-    <NavBar />
-    <HomePage />
 
+
+     
+
+
+ <div className="App" id="app">
+   <NavBar />
+      <HomePage />
 
     <section className='forms'>
       <div className="login-form">
@@ -42,7 +52,7 @@ function App() {
       postData.map(post =>
         <PostObject contentJson = {post} key = {post.postID}></PostObject>)
       }
-
+    <Footer/>
   </div>
 
 

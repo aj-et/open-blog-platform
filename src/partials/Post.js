@@ -1,6 +1,11 @@
 import React from "react";
+
 // import { useState } from "react";
 import "./post.css"
+
+import { useState } from "react";
+import {post} from "../post.css"
+
 
 
 export default function PostObject(props){
