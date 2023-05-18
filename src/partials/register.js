@@ -1,7 +1,4 @@
-// Use this to call the function in App.js
-// <div className='register-form'>
-// {<Register></Register>}
-// </div>
+
 import React, { useState } from "react";
 
 export default function Register() {
