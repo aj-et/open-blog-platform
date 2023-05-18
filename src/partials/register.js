@@ -1,25 +1,45 @@
 
 import React, { useState } from "react";
+import { auth } from "../utils/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function Register() {
-return (
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [cPassword, setCPassword] = useState("");
 
-<div id="register-content">
-        <form id="register">
-        <fieldset>
-            <legend>Register - New User</legend>
-            <label for="email">Email</label>
-            <input type="email" placeholder="Email" name="email" required/>
+    const register = (e) => {
+        e.preventDefault();
+        // const auth = getAuth();
+        createUserWithEmailAndPassword(auth, email, password).then ((userCredential) => {
+            // const user = userCredential.user;
+            console.log(userCredential);
+        }).catch((error) => {
+            console.log(error);
+        });
 
-            <label for="psw">Password</label>
-            <input type="password" placeholder="Password" name="psw" required/>
+        // This will empy out the fields after clicking button
+        setEmail('');
+        setPassword('');
+        setCPassword('');
+    };
 
-            <label for="cpsw">Confirm Password</label>
-            <input type="password" placeholder="Confirm Password" name="cpsw" required/>
-            <button type="submit">Register</button>
-        </fieldset>
-    </form>
-</div>
+    return (
+        <div id="register-content">
+                <form id="register" onSubmit={register}>
+                <fieldset>
+                    <legend>Register - New User</legend>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" placeholder="Email" name="email" value={email} onChange={e => setEmail(e.target.value)} required/>
 
-)
+                    <label htmlFor="psw">Password</label>
+                    <input type="password" placeholder="Password" name="psw" value={password} onChange={e => setPassword(e.target.value)} required/>
+
+                    <label htmlFor="cpsw">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" name="cpsw" value={cPassword} onChange={e => setCPassword(e.target.value)} required/>
+                    <button type="submit">Register</button>
+                </fieldset>
+            </form>
+        </div>
+    )
 }
