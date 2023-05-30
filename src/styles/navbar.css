@@ -1,0 +1,48 @@
+/* Colors:
+Blue Gray
+#D9E4EC
+
+Misty Blue
+#B7CFDC
+
+Blue Grotto
+#6AABD2
+
+Misty Blue 
+#385E72
+*/
+
+.nav-bar {
+    background-color: #385E72;
+    /* width: 70%; */
+    /* padding: 30px; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 1.75rem;
+
+    /* flex-direction: column; */
+    /* color: white; */
+}
+.nav-links {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.nav-links a {
+ color: white;
+ padding: 40px;
+ transition: .25s;
+
+}
+.nav-links a:hover {
+    background-color: #6AABD2;
+    transform: scale(1.05);
+    transition: .25s;
+    
+}
+.nav-bar img {
+    padding: 20px;
+}

@@ -1,0 +1,24 @@
+/* Colors:
+Blue Gray
+#D9E4EC
+
+Misty Blue
+#B7CFDC
+
+Blue Grotto
+#6AABD2
+
+Misty Blue 
+#385E72
+*/
+
+footer {
+    text-align: center;
+    padding: 80px 30px 50px 30px;
+    font-size: 1.25em;
+    color: #385E72;
+}
+footer hr {
+    border: 1px solid #385E72;
+    opacity: .7;
+}

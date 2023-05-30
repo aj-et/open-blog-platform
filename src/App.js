@@ -10,12 +10,12 @@ import AuthStatus from './partials/authStatus';
 // import {useEffect, useState} from "react";
 import React from 'react';
 
-import PostObject from './Post';
-import postData from "./posts.json"
+// import PostObject from './Post';
+// import postData from "./posts.json"
 // import Footer from './Footer'
 
-import PostObject from './partials/Post';
-import postData from "./data/posts.json"
+// import PostObject from './partials/Post';
+// import postData from "./data/posts.json"
 import Footer from './partials/Footer'
 
 
@@ -27,34 +27,21 @@ function App() {
 
   return (
 
-
-
+    
+    
      
+<main id='Webpage'>
 
-
- <div className="App" id="app">
-   <NavBar />
-      <HomePage />
-
-    <section className='forms'>
-      <div className="login-form">
-        {<Login></Login>}
-        {<AuthStatus />}
+  <div className="App" id="app">
+    <NavBar />
+      <div className='home-page'>
+        <HomePage />
       </div>
 
-      <div className='register-form'>
-        {<Register></Register>}
-      </div>
-    </section>
+      <Footer/>
 
-
-      {
-      postData.map(post =>
-        <PostObject contentJson = {post} key = {post.postID}></PostObject>)
-      }
-    <Footer/>
-  </div>
-
+    </div>
+  </main>
 
   );
 }

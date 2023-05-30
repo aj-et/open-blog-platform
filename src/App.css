@@ -1,3 +1,34 @@
+/* Colors:
+Blue Gray
+#D9E4EC
+
+Misty Blue
+#B7CFDC
+
+Blue Grotto
+#6AABD2
+
+Misty Blue 
+#385E72
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto:wght@300&display=swap');
+#Webpage {
+  background-color:#D9E4EC;
+  max-width: 1650px;
+  margin: 0 auto;
+  font-family: Libre Franklin;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
