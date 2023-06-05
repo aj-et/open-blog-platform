@@ -31,7 +31,7 @@ export default function AuthStatus () {
     return(
         <>
             {/* { authUser ? <><p>{`Signed In as ${authUser.email}`}</p><button onClick={userSignOut}>Sign Out</button></> : <Link to='auth'>Login/Register</Link> } */}
-            { authUser ? <p onClick={userSignOut}>Sign Out</p> : <Link to='/login'>Login</Link> }
+            { authUser ? <Link to='/' onClick={userSignOut}>Signout</Link> : <Link to='/login'>Login</Link> }
         </>
     )
 }
