@@ -1,18 +1,11 @@
 import './App.css';
-
+import React from 'react';
 import NavBar from './components/navbar';
 import HomePage from './components/home';
 
 import Login from './partials/login.js';
 import Register from './partials/register.js';
 import AuthStatus from './partials/authStatus';
-
-// import {useEffect, useState} from "react";
-import React from 'react';
-
-import PostObject from './Post';
-import postData from "./posts.json"
-// import Footer from './Footer'
 
 import PostObject from './partials/Post';
 import postData from "./data/posts.json"
@@ -46,6 +39,7 @@ function App() {
         {<Register></Register>}
       </div>
     </section>
+    
 
 
       {
