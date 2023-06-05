@@ -29,6 +29,7 @@ Misty Blue
     display: flex;
     justify-content: space-between;
     padding-left: 40px;
+    font-size: 30px;
 }
 
 .nav-links a {

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { auth } from "../utils/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 
+import { Link } from 'react-router-dom';
+
 export default function AuthStatus () {
     const [authUser, setAuthUser] = useState(null);
 
@@ -27,8 +29,9 @@ export default function AuthStatus () {
 
     // Items here will show up when logged in
     return(
-        <div className="container">
-            { authUser ? <><p>{`Signed In as ${authUser.email}`}</p><button onClick={userSignOut}>Sign Out</button></> : <p>No accounts signed in!</p> }
-        </div>
+        <>
+            {/* { authUser ? <><p>{`Signed In as ${authUser.email}`}</p><button onClick={userSignOut}>Sign Out</button></> : <Link to='auth'>Login/Register</Link> } */}
+            { authUser ? <p onClick={userSignOut}>Sign Out</p> : <Link to='/login'>Login</Link> }
+        </>
     )
 }

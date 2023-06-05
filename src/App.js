@@ -1,11 +1,10 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import NavBar from './components/navbar';
 import HomePage from './components/home';
-
-import Login from './partials/login.js';
-import Register from './partials/register.js';
-import AuthStatus from './partials/authStatus';
+import Login from './partials/login';
+import Register from './partials/register';
 
 // import {useEffect, useState} from "react";
 import React from 'react';
@@ -26,22 +25,27 @@ function App() {
   
 
   return (
+    <BrowserRouter>
+      <main id='Webpage'>
 
-    
-    
-     
-<main id='Webpage'>
+        <div className="App" id="app">
+          <NavBar />
+          {/* Put auth status on the right side or something */}
+          {/* <AuthStatus /> */}
+            <div className='home-page'>
+              <Routes>
+                <Route path='/' element={<HomePage />}/>
+                <Route path='/login' element={<Login />}/>
+                <Route path='/profile' element={<>Profile</>}/>
+                <Route path='/register' element={<Register />}/>
+                {/* <HomePage /> */} 
+              </Routes>
+            </div>
+          <Footer/>
+        </div>
+      </main>
 
-  <div className="App" id="app">
-    <NavBar />
-      <div className='home-page'>
-        <HomePage />
-      </div>
-
-      <Footer/>
-
-    </div>
-  </main>
+  </BrowserRouter>
 
   );
 }
