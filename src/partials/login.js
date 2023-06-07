@@ -3,14 +3,17 @@ import React, { useState } from "react";
 import { auth } from "../utils/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
+import { Link } from 'react-router-dom';
 
-import React from "react";
-import { useState } from "react";
 
+import { useNavigate } from 'react-router-dom'
+// import React from "react";
+// import { useState } from "react";
 
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     const login = async (e) => {
         e.preventDefault();
@@ -18,10 +21,12 @@ export default function Login() {
         signInWithEmailAndPassword(auth, email, password).then ((userCredential) => {
             // const user = userCredential.user;
             console.log(userCredential);
+            
+            navigate('/profile');
         }).catch((error) => {
             console.log(error);
         });
-
+        
         // This will empy out the fields after clicking button
         setEmail('');
         setPassword('');
@@ -51,7 +56,7 @@ export default function Login() {
 
                 <div className="container">
                     <h2>Don't have an account?</h2>
-                    <div className="reg"><a href="#">Register</a></div>
+                    <div className="reg"><Link to='/register'>Register</Link></div>
                 </div>
             </div>
         </div>
