@@ -1,4 +1,19 @@
+/* Colors:
+Blue Gray
+#D9E4EC
 
+Misty Blue
+#B7CFDC
+
+Blue Grotto
+#6AABD2
+
+Misty Blue 
+#385E72
+*/
+
+
+/* 
 .home-page {
     box-sizing: border-box;
 }
@@ -19,5 +34,34 @@
     padding: 5px;
     background-color: skyblue;
     width: 100%;
+} */
+
+
+
+.home-content {
+    margin: 2rem;
 }
 
+.hero-text {
+    /* background-color: red; */
+    margin: 20px;
+    padding-top: 40px;
+    font-size: 3rem;
+}
+.post {
+    background-color: #B7CFDC;
+    box-shadow: 2px 2px 5px #385E72;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.post:hover {
+    transform: scale(1.015);
+    transition: 0.1s;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+}
