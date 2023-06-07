@@ -2,16 +2,18 @@
 import React, { useState } from "react";
 import { auth } from "../utils/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { uuidv4 } from "@firebase/util";
 
 export default function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [cPassword, setCPassword] = useState("");
+    const [userID, setUserID] = useState(uuidv4());
 
     const register = (e) => {
         e.preventDefault();
         // const auth = getAuth();
-        createUserWithEmailAndPassword(auth, email, password).then ((userCredential) => {
+        createUserWithEmailAndPassword(auth, email, password, userID).then ((userCredential) => {
             // const user = userCredential.user;
             console.log(userCredential);
         }).catch((error) => {
@@ -22,6 +24,7 @@ export default function Register() {
         setEmail('');
         setPassword('');
         setCPassword('');
+        setUserID('');
     };
 
     return (

@@ -1,20 +1,23 @@
 import './App.css';
+
+import React from 'react';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 import NavBar from './components/navbar';
 import HomePage from './components/home';
 import Login from './partials/login';
 import Register from './partials/register';
 
-// import {useEffect, useState} from "react";
+
+import PostObject from './partials/Post';
+import postData from "./data/posts.json"
+
+
 import React from 'react';
 
-// import PostObject from './Post';
-// import postData from "./posts.json"
-// import Footer from './Footer'
 
-// import PostObject from './partials/Post';
-// import postData from "./data/posts.json"
 import Footer from './partials/Footer'
 
 
@@ -25,6 +28,9 @@ function App() {
   
 
   return (
+
+
+
     <BrowserRouter>
       <main id='Webpage'>
 
@@ -46,6 +52,7 @@ function App() {
       </main>
 
   </BrowserRouter>
+
 
   );
 }
