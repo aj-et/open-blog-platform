@@ -19,4 +19,4 @@ function Profile() {
   );
 }
 
-export default App;
+export default Profile;
