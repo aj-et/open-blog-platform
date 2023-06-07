@@ -2,11 +2,12 @@
     display:grid;
     grid-template-columns: 1fr auto 1fr 1fr;
     grid-template-rows: 1fr 1fr 4fr 1fr;
-    background-color: #EDF6F9;
-    color:#E29578;
-    max-width: 32rem;
-    padding:2rem;
-    margin:2rem;
+    /* background-color: #EDF6F9; */
+    /* color:#E29578; */
+    max-width: 65rem;
+    padding:4rem;
+    /* margin:2rem; */
+    margin: 2rem 2rem 2rem 0;
 }
 
 .userID{
@@ -15,6 +16,8 @@
     font-style: bold;
     color:black;
     text-align: left;
+    font-size: 1.3em;
+    text-decoration: underline #385E72;
 }
 .heading{
     grid-row:2/3;
@@ -22,10 +25,13 @@
     font-size: larger;
     font-style: italic;
     text-align: left;
+    font-size: 1.6em;
+    padding: 0px 0px 30px 0px;
 }
 .content{
     grid-row: 3/4;
     grid-column:1/5;
+    font-size: 1.4em;
     
 }
 
@@ -39,6 +45,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 00.2em;
+    font-size: 1.2em;
 }
 .bottom div{
     padding:0.2em;
@@ -46,10 +53,17 @@
 
 a {
     text-decoration: none;
-    color:#E29578;
+    color: #385E72;
+    font-size: larger;
+    font-weight: 500;
 }
 button{
     border: none;
-    background-color:#EDF6F9;
+    background-color:#B7CFDC;
     padding: 0.1em;
+}
+
+.like-count, .share-count{
+    color: black;
+    font-weight: 500;
 }

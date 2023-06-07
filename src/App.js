@@ -1,25 +1,26 @@
 import './App.css';
 
-// import NavBar from './components/Navbar';
-// import HomePage from './components/Home';
 
-import Login from './partials/login.js';
-import Register from './partials/register.js';
-
-
-import {useEffect, useState} from "react";
 import React from 'react';
-import PostObject from './Post';
-import postData from "./posts.json"
-import Footer from './Footer'
 
-import Header from './components/Header'
-import Navbar from './components/NavbarRD'
-import Banner from './components/Banner'
-import About from './components/About'
-// import Project from './components/Project'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
+import NavBar from './components/navbar';
+import HomePage from './components/home';
+import Login from './partials/login';
+import Register from './partials/register';
+
+
+
+import PostObject from './partials/Post';
+import postData from "./data/posts.json"
+
+
+
+
+import Footer from './partials/Footer'
+
 
 
 
@@ -31,41 +32,29 @@ function App() {
 
 
 
- <div className="App" id="app">
-    <section className='forms'>
-      <div className="login-form">
-        {<Login></Login>}
-      </div>
 
-      <div className='register-form'>
-        {<Register></Register>}
-      </div>
-    </section>
+    <BrowserRouter>
+      <main id='Webpage'>
 
+        <div className="App" id="app">
+          <NavBar />
+          {/* Put auth status on the right side or something */}
+          {/* <AuthStatus /> */}
+            <div className='home-page'>
+              <Routes>
+                <Route path='/' element={<HomePage />}/>
+                <Route path='/login' element={<Login />}/>
+                <Route path='/profile' element={<>Profile</>}/>
+                <Route path='/register' element={<Register />}/>
+                {/* <HomePage /> */} 
+              </Routes>
+            </div>
+          <Footer/>
+        </div>
+      </main>
 
-      {
-      postData.map(post =>
-        <PostObject contentJson = {post} key = {post.postID}></PostObject>)
-      }
+  </BrowserRouter>
 
-      <Header />
-      <hr />
-      <Navbar />
-      <br />
-      <Banner /> 
-      <br />
-      <About />
-      <br />
-      <hr />
-      <h1 className="skillheader">My SKills</h1>
-      <hr />
-      {/* <Project /> */}
-      <hr />
-      <Portfolio />
-      <hr />
-      <h1 id="contactnav" className="contact">Contact Information</h1>
-      <hr />
-      <Contact />
 
 
   </div>

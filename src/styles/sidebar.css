@@ -1,12 +1,80 @@
+/* Colors:
+Blue Gray
+#D9E4EC
 
+Misty Blue
+#B7CFDC
 
-.profile-image {
-    border-radius: 50%;
-    border: 1px solid black;
-}
+Blue Grotto
+#6AABD2
 
-.profile-card {
-    width: 75%;
+Misty Blue 
+#385E72
+*/
+
+/* SIDEBAR */
+.sidebar {
+    margin-top: 32px;
+    padding: 5px 20px 20px 20px;
+    background-color: #6AABD2;
+    box-shadow: 2px 2px 5px #385E72;
     border-radius: 10px;
-    border: 1px solid black;
+    transition: 0.1s;
+    
 }
+.sidebar:hover {
+    transform: scale(1.015);
+    transition: 0.1s;
+    
+}
+
+.profile-header {
+    padding-bottom: 10px;
+}
+
+
+/* PROFILE IMAGES */
+.profile-image  {
+    height: 64px;
+    width: 64px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px;
+    transition: 0.3s; 
+    
+}
+.profile-image:hover {
+    transform: scale(1.05);
+    transition: 0.3s; 
+}
+  
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    /* color: black; */
+    /* padding-left: ; */
+}
+.profile-links a {
+    color: black;
+    font-size: larger;
+    font-size: 1.3em;
+    text-decoration: underline;
+    
+}
+.sidebar hr {
+    border: 1px solid #385E72;
+    opacity: .5;
+    
+    
+}
+.sidebar h2 {
+    
+}
+
+
