@@ -1,16 +1,22 @@
 import './App.css';
-
-
-import React from 'react';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import NavBar from './components/navbar';
 import HomePage from './components/home';
 import Login from './partials/login';
 import Register from './partials/register';
+
 import Footer from "./partials/Footer";
+
+import NewPost from './partials/newPost';
+
+// import {useEffect, useState} from "react";
+import React from 'react';
+
+
+import Footer from './partials/Footer'
+
+
 
 
 function App() {
@@ -32,6 +38,7 @@ function App() {
                 <Route path='/login' element={<Login />}/>
                 <Route path='/profile' element={<>Profile</>}/>
                 <Route path='/register' element={<Register />}/>
+                <Route path='/new-post' element={<NewPost />}/>
                 {/* <HomePage /> */} 
               </Routes>
             </div>
@@ -40,10 +47,8 @@ function App() {
       </main>
 
   </BrowserRouter>
-
-
-
   )
+
 }
 
 export default App;
