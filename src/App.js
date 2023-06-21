@@ -14,7 +14,7 @@ import NewPost from './partials/newPost';
 import React from 'react';
 
 
-import Footer from './partials/Footer'
+
 
 
 
