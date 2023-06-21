@@ -12,6 +12,7 @@ import NewPost from './partials/newPost';
 
 // import {useEffect, useState} from "react";
 import React from 'react';
+import Profile from './partials/Profile';
 
 
 
@@ -36,7 +37,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<HomePage />}/>
                 <Route path='/login' element={<Login />}/>
-                <Route path='/profile' element={<>Profile</>}/>
+                <Route path='/profile' element={<><Profile/></>}/>
                 <Route path='/register' element={<Register />}/>
                 <Route path='/new-post' element={<NewPost />}/>
                 {/* <HomePage /> */} 
