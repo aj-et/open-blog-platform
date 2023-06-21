@@ -3,18 +3,19 @@ import React, { useState } from "react";
 import { db } from "../utils/firebase";
 import {  collection, doc, setDoc } from "firebase/firestore";
 
-const NewPost = (props) => {
+const NewPost = () => {
+  
   const postId = uuidv4();
   const HandleFormSubmit = async (e) => {
     e.preventDefault();
-    const userID = props.userID;
-
+    const userID = "nothing"
+    document.getElementById("submit").style.backgroundColor="blue";
     const title = e.target.title.value;
     const content = e.target.content.value;
 
   
     const dbRef = collection(db,"Posts");
-
+    
     try {
       await setDoc(doc(dbRef, postId), {
         title: title,
@@ -38,7 +39,7 @@ const NewPost = (props) => {
         <textarea name="content" id="content" placeholder="What's your piece of thought?" />
       </legend>
 
-      <button type="submit">Post</button>
+      <button type="submit" id = "submit">Post</button>
     </form>
   );
 };

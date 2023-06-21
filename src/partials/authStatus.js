@@ -36,7 +36,7 @@ export default function AuthStatus () {
     return(
     <div className="container">
             { authUser ? <><p>{`Signed In as ${authUser.email}`}</p><button onClick={userSignOut}>Sign Out</button>
-            <NewPost userID ={authUser.email}/></> : <p>No accounts signed in!</p> }
+            <NewPost /></> : <p>No accounts signed in!</p> }
 
            
         </div>

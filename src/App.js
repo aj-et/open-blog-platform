@@ -11,13 +11,6 @@ import Login from './partials/login';
 import Register from './partials/register';
 
 
-import PostObject from './partials/Post';
-import postData from "./data/posts.json"
-
-
-import React from 'react';
-
-
 import Footer from './partials/Footer'
 
 
