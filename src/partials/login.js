@@ -4,13 +4,12 @@ import { auth } from "../utils/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 import { Link } from 'react-router-dom';
-
+import NewPost from "./newPost";
 
 
 import { useNavigate } from 'react-router-dom'
 // import React from "react";
 // import { useState } from "react";
-
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -23,7 +22,8 @@ export default function Login() {
         signInWithEmailAndPassword(auth, email, password).then ((userCredential) => {
             // const user = userCredential.user;
             console.log(userCredential);
-            
+            console.log(userCredential.user.email);
+            <NewPost userID ={userCredential.user.email}/>
             navigate('/profile');
         }).catch((error) => {
             console.log(error);
