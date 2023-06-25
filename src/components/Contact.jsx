@@ -1,24 +1,24 @@
 import React, { Component } from 'react'
-import contact from '../components/images/images/contactlogo.png';
-import mailme from '../components/images/images/mailmeimg.png';
 
+import facebook from '../images/linkImages/facebook-logo.png';
+import instagram from '../images/linkImages/instagram-image.png';
+import twitter from '../images/linkImages/twitter-image.png';
 
 class Contact extends Component {
     render() {
         return (
-            <section className="container-1">
+            <section className="contact-info">
 
-                <img id="contactimg" src={contact} width="180" height="180" alt="contactlogo"/>
-                <h3> <strong>Open-Blog-Platform</strong></h3>
-                <h4>Random Text Random text Random text</h4>
-                <h4>Email Id: Blogger@gmail.com</h4>
-                <a id="mail"href="https://mail.google.com/mail/?view=cm&fs=1&to=openblogplatform@gmail.com"><img id="mailmelogo" src={mailme} alt="mail me"/>Click Here To Send Mail</a>
-                <h4>Contant Info: 123-456-7890/123-4566-7890</h4>
+                <p>Name: Charles Randolph</p>                
+                <p>Email: <a className='account-email' href="#">charlesrandolph@gmail.com</a></p>
+                <p>Phone: 123-456-7890</p>
 
-                
-                
-                       
-                
+                <div className='socailmedia-links'>
+                <a href="#"><img className='socialmedia' src={facebook} alt="facebook" /></a>
+                <a href="#"><img className='socialmedia' src={instagram} alt="instagram" /></a>
+                <a href="#"><img className='socialmedia' src={twitter} alt="twitter" /></a>
+                </div>
+
             </section>
         )
     }

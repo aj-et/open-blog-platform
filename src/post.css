@@ -1,3 +1,10 @@
+/* Colors:
+Main Color: #0073a4c2
+
+Secondary Color: #35d2da
+*/
+
+
 .post{
     display:grid;
     grid-template-columns: 1fr auto 1fr 1fr;
@@ -17,7 +24,7 @@
     color:black;
     text-align: left;
     font-size: 1.3em;
-    text-decoration: underline #385E72;
+    text-decoration: underline black;
 }
 .heading{
     grid-row:2/3;
@@ -53,7 +60,7 @@
 
 a {
     text-decoration: none;
-    color: #385E72;
+    color: black;
     font-size: larger;
     font-weight: 500;
 }

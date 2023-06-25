@@ -1,4 +1,10 @@
 /* Colors:
+Main Color: #0073a4c2
+
+Secondary Color: #35d2da
+*/
+
+/* Colors:
 Blue Gray
 #D9E4EC
 
@@ -13,30 +19,6 @@ Misty Blue
 */
 
 
-/* 
-.home-page {
-    box-sizing: border-box;
-}
-
-.main-container {
-    display: flex;
-    border: 1px solid black;
-    width: 100%;
-}
-
-.blog-site {
-    padding: 5px;
-    background-color: red;
-    width: 100%;
-}
-
-.side-bar {
-    padding: 5px;
-    background-color: skyblue;
-    width: 100%;
-} */
-
-
 
 .home-content {
     margin: 2rem;
@@ -49,7 +31,7 @@ Misty Blue
     font-size: 3rem;
 }
 .post {
-    background-color: #B7CFDC;
+    background-color: #0073a479;
     box-shadow: 2px 2px 5px #385E72;
     border-radius: 10px;
     transition: 0.1s;

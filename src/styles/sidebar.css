@@ -1,22 +1,14 @@
 /* Colors:
-Blue Gray
-#D9E4EC
+Main Color: #0073a4c2
 
-Misty Blue
-#B7CFDC
-
-Blue Grotto
-#6AABD2
-
-Misty Blue 
-#385E72
+Secondary Color: #35d2da
 */
 
 /* SIDEBAR */
 .sidebar {
     margin-top: 32px;
     padding: 5px 20px 20px 20px;
-    background-color: #6AABD2;
+    background-color: #0073a4c2;
     box-shadow: 2px 2px 5px #385E72;
     border-radius: 10px;
     transition: 0.1s;

@@ -1,15 +1,7 @@
 /* Colors:
-Blue Gray
-#D9E4EC
+Main Color: #0074a4
 
-Misty Blue
-#B7CFDC
-
-Blue Grotto
-#6AABD2
-
-Misty Blue 
-#385E72
+Secondary Color: #35d2da
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto:wght@300&display=swap');
@@ -34,6 +26,10 @@ Misty Blue
 
 
 /* LOGIN FORM */
+
+.login-container{
+  padding-top: 100px;
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -53,7 +49,7 @@ Misty Blue
 .modal-content {
   background-color: #fefefe;
   margin: auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 2px solid #6AABD2;
+  border: 2px solid #0073a4c2;
   width: 80%; /* Could be more or less, depending on screen size */
   max-width: 30em;
   border-radius: 2em;
@@ -83,24 +79,29 @@ Misty Blue
   margin-top: 0.7em;
 }
 .modal-content .container input {
-  border: 1px solid #6AABD2;
+  border: 1px solid #0073a4c2;
   font-size: 0.9em;
   font-weight: lighter;
 }
 .modal-content .container button {
   border: none;
-  background-color: #6AABD2;
+  background-color: #0073a4c2;
   color: white;
   transition: 0.25s;
   font-size: 1em;
   margin: 1em auto 0;
   display: block;
   width: 100%;
+  transition: 0.15s;
 }
 .modal-content .container button:hover {
   cursor: pointer;
-  color: #6AABD2;
-  background-color: #D9E4EC;
+  color: white;
+  
+  background-color: #35d2da;
+  transition: 0.15s;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2.5px grey;
 }
 .modal-content .container input:not(input[type=checkbox]), .modal-content .container button {
   padding: 0.4em 0.6em;
@@ -134,8 +135,7 @@ Misty Blue
   margin: 0 5px auto auto;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #6AABD2;
   cursor: pointer;
 }
