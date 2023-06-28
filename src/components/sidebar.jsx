@@ -4,8 +4,35 @@ import profile1 from '../images/profileImages/pexels-brandan-saviour-2741701.jpg
 import profile2 from '../images/profileImages/pexels-ketut-subiyanto-4350178.jpg';
 import profile3 from '../images/profileImages/pexels-leeloo-thefirst-4542178.jpg';
 import profile4 from '../images/profileImages/pexels-sinitta-leunen-6652928.jpg';
+import { db } from "../utils/firebase";
+import {  collection, doc, setDoc } from "firebase/firestore";
+
+
+// can all images be placed in the database and pulled from there
+
+// insert imports that will give access to the database
+const usernames = [];
+
 
 export default function SideBar () {
+    // i need a function to pull the data from the database and save it to a variable. 
+    const postsRef = db.collection('posts');
+
+    postsRef.get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const username = doc.data().username;
+          usernames.push(username);
+        });
+        // Use the `usernames` array to update the state or perform further actions
+      })
+      .catch((error) => {
+        console.error('Error fetching usernames:', error);
+      });
+      
+    // var userEmail = db.collection.find();
+    // console.log(userEmail)
+    
     return(
         <div className='sidebar'>
             <h2 className='profile-header'>Trending Profiles</h2>
@@ -25,11 +52,14 @@ export default function SideBar () {
                 <h2>Other Popular Profiles</h2>
 
                 <div className='profile-links'>
+                    {usernames.map((user) =><a href= "/">{user}</a> )}
+
                     <a href="/">Charles</a>
                     <a href="/">Bethany</a>
                     <a href="/">Emma</a>
                     <a href="/">Rachel</a>
                     <a href="/">Timothy</a>
+                    
                 </div>
 
                 {/* <p>Lorem Ipsum Stuff</p> */}
