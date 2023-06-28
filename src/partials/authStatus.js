@@ -4,7 +4,26 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 
 import { Link } from 'react-router-dom';
 
-export default function AuthStatus () {
+
+
+// const getStatus = () =>{
+//     if (authUser.current){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+
+// const getUser = () =>{
+//     if (authUser.current){
+//         return authUser.current
+//     }
+//     else{
+//         return "notLoggedIn"
+//     }
+// }
+function  AuthStatus(){
     const [authUser, setAuthUser] = useState(null);
 
     useEffect(() => {
@@ -26,8 +45,6 @@ export default function AuthStatus () {
             console.log('Sign out succesful')
         }).catch(error => console.log(error))
     }
-
-    // Items here will show up when logged in
     return(
 
         <nav className="nav-bar">
@@ -36,3 +53,5 @@ export default function AuthStatus () {
 
     )
 }
+
+export default AuthStatus

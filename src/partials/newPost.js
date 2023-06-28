@@ -2,6 +2,7 @@ import { uuidv4 } from "@firebase/util";
 import React, { useState } from "react";
 import { db } from "../utils/firebase";
 import {  collection, doc, setDoc } from "firebase/firestore";
+import {auth} from "../utils/firebase";
 
 
 // function userID({email, setEmail}) {
@@ -19,6 +20,10 @@ const NewPost = () => {
         // const userID = props;
         const title = e.target.title.value;
         const content = e.target.content.value;
+        const like = 0;
+        const shares = 0;
+        const userID = auth.currentUser.email;
+
         // console.log(userID())
 
         const dbRef = collection(db,"Posts");
@@ -27,6 +32,9 @@ const NewPost = () => {
             await setDoc(doc(dbRef, postId), {
             title: title,
             content: content,
+            like:like,
+            shares:shares,
+            userID: userID
             // userID: userID,
             });
             console.log("New post added successfully!");

@@ -16,10 +16,6 @@ import Profile from './partials/Profile';
 
 
 
-
-
-
-
 function App() {
 
   
