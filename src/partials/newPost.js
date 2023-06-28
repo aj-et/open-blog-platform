@@ -44,15 +44,23 @@ const NewPost = () => {
     };
 
     return (
-        <form onSubmit={HandleFormSubmit}>
-            <legend>
-                <label htmlFor="title">Do you have a title? </label>
-                <input type="text" name="title" id="title" required />
-            </legend>
-            <legend>
-                <textarea name="content" id="content" placeholder="What's your piece of thought?" />
-            </legend>
-            <button type="submit">Post</button>
+        
+        <form className="new-post-form" onSubmit={HandleFormSubmit}>
+            
+            <div className="new-post-title">
+                <label htmlFor="title">Title </label>
+                <input type="text" name="title" id="title" required placeholder="Title"/>
+                </div>
+
+            <div className="new-post-content">
+                <label>Blog Content</label>
+                <textarea name="content" id="content" placeholder="What's on your mind?" />
+                <br></br>
+            </div>
+            
+            <div className="new-post-button">
+                <button type="submit">Create Post</button>
+            </div>
         </form>
     );
 };

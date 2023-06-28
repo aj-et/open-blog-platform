@@ -1,0 +1,195 @@
+/* Colors:
+Main Color: #0073a4c2
+
+Secondary Color: #35d2da
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto:wght@300&display=swap');
+#Webpage {
+  background-color:#D9E4EC;
+  max-width: 1650px;
+  margin: 0 auto;
+  font-family: Libre Franklin;
+}
+
+
+
+
+/* Header */
+
+
+/* Account Page */
+.account-page {
+    margin: 2.5rem;
+}
+
+
+/* Account Page HR tag */
+.account-page hr {
+    margin-top: 100px;
+    margin: 100px 50px;
+    border: 1px solid #385E72 ;
+}
+
+
+/* Account Page (Main Body of this page) */
+.account-page-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;    
+}
+
+
+/* About Me */
+.about-me {
+    background-color: #0073a4c2;
+    /* border: 1px solid rgba(54, 53, 53, 0.783) ; */
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    max-width: 350px;
+    font-size: larger;
+    box-shadow: 2px 2px 5px #385E72;
+    
+}
+.about-me img {
+    object-fit: contain;
+    height: auto;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #385E72;
+}
+
+
+
+
+
+/* Info Box */
+.info-box {
+    background-color: #0073a479;
+    /* border: 1px solid rgba(54, 53, 53, 0.783) ; */
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px #385E72;
+}
+.info-box h2 {
+    font-size: xx-large;
+}
+
+
+/* Account Contact Info */
+.account-contact {
+    padding-top: 10px;
+    font-size: larger;
+}
+.account-email {
+    color: #0074a4;
+    text-decoration: underline;
+}
+
+
+/* Add New Post */
+.add-new-post {
+    padding: 0px 15px;
+    border: 1px solid rgba(54, 53, 53, 0.783) ;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.add-new-post h2 {
+    font-size: x-large;
+}
+.add-new-post p {
+    font-size: larger;
+}
+
+
+/* New Post Form */
+.new-post-form {
+    font-size: larger;
+}
+.new-post-form div {
+    padding: 10px 0px;
+}
+
+/* Title */
+.new-post-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+.new-post-title label {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.new-post-title input {
+    font-size: large;
+    padding: 5px;
+}
+
+/* Content */
+.new-post-content {
+    display: flex;
+    flex-direction: column;
+}
+.new-post-content label {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.new-post-content textarea {
+    padding: 5px;
+    font-size: large;
+    min-height: 100px;
+    width: 600px;
+    min-width: 300px;
+    max-width: 900px;
+    font-family: Libre Franklin;
+}
+
+/* Button */
+.new-post-button {
+    padding-top: 20px;
+}
+.new-post-form button {
+    padding: 5px 15px 5px 15px;
+    font-size: 22px;
+    background-color: #0073a4c2;
+    color: white;
+    transition: 0.15s;
+}
+.new-post-form button:hover {
+    background-color: #35d2da;
+    transition: 0.15s;
+    transform: scale(1.02);
+    box-shadow: 1px 1px 2.5px grey;
+}
+
+
+/* Account Post */
+.account-posts {
+    padding-left: 50px;
+}
+.account-posts h2{
+    font-size: 2rem;
+}
+
+
+/* Social Media Images/Links */
+.socialmedia {
+    /* padding-top: 15px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    transition: 0.15s;
+}
+.socailmedia-links {
+    padding-top: 15px;
+    display: flex;
+    gap: 12px;
+}
+.socialmedia:hover {
+    transition: 0.15s;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px black;
+}
+

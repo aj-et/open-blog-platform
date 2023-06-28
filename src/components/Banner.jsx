@@ -1,19 +1,15 @@
 import React, { Component } from 'react'
 import logo from '../components/images/images/maxresdefault.jpg';
-
+import profile1 from '../images/profileImages/pexels-brandan-saviour-2741701.jpg';
 
 
 
 class Banner extends Component {
     render() {
         return (
-            <section className="container-banner">
+            <section className="banner-container">
 
-                    <a href="#home"><img id="profilepic" src={logo}  width="170" height="170" alt="profilepic"/></a>
-                    <h1> Hi! Start Blogging!</h1>
-                    <p id="paragarph1"> Creator Name <br/>
-                    </p>
-                    
+                    <img id="profilepic" src={profile1}alt="profile image"/>
                     
             </section>
         )

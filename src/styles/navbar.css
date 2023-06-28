@@ -1,19 +1,11 @@
 /* Colors:
-Blue Gray
-#D9E4EC
+Main Color: #0073a4c2
 
-Misty Blue
-#B7CFDC
-
-Blue Grotto
-#6AABD2
-
-Misty Blue 
-#385E72
+Secondary Color: #35d2da
 */
 
 .nav-bar {
-    background-color: #385E72;
+    background-color: #0073a4c2;
     /* width: 70%; */
     /* padding: 30px; */
     display: flex;
@@ -39,11 +31,15 @@ Misty Blue
 
 }
 .nav-links a:hover {
-    background-color: #6AABD2;
+    background-color: #35d2da;
     transform: scale(1.05);
     transition: .25s;
     
 }
 .nav-bar img {
-    padding: 20px;
+    padding: 10px 20px;
+}
+.web-logo {
+    width: 150px;
+    height: 150px;
 }

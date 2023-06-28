@@ -1,5 +1,5 @@
 
-import logo from '../images/surprise-box.png'
+import logo from '../images/theLostOnes-logo.png'
 import '../styles/navbar.css'
 import AuthStatus from '../partials/authStatus'
 
@@ -9,7 +9,7 @@ export default function NavBar () {
     return (
         <div>
             <nav className="nav-bar">
-                <img src={logo} alt="logo" />
+                <img className='web-logo' src={logo} alt="logo" />
                 {/* <a href="https://www.flaticon.com/free-icons/random" title="random icons">Random icons created by noomtah - Flaticon</a> */}
                 <div className='nav-links'>
                 {/* Change CSS from a to link */}
