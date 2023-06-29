@@ -16,10 +16,11 @@ const usernames = [];
 
 export default function SideBar () {
     // i need a function to pull the data from the database and save it to a variable. 
-    const postsRef = db.collection('posts');
+    const postsRef = db.collection('Posts');
 
     postsRef.get()
       .then((querySnapshot) => {
+        console.log('test', querySnapshot);
         querySnapshot.forEach((doc) => {
           const username = doc.data().username;
           usernames.push(username);
