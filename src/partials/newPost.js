@@ -17,12 +17,16 @@ const NewPost = () => {
     const HandleFormSubmit = async (e) => {
         e.preventDefault();
         
+        
         // const userID = props;
         const title = e.target.title.value;
         const content = e.target.content.value;
         const like = 0;
         const shares = 0;
         const userID = auth.currentUser.email;
+
+        e.target.title.value = "";
+        e.target.content.value = "";
 
         // console.log(userID())
 

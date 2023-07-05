@@ -77,8 +77,7 @@ function Profile() {
       <Navbar />
       <h1>Thank you for visiting us, Please log in or sign up to view your profile</h1>
       
-      
-      <Contact />
+    
       </div>
     )
   };
