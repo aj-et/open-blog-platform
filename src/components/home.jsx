@@ -9,7 +9,7 @@ import fetchPostData from '../partials/fetchPostData';
 // This will contain the home page wireframe
 
 export default function HomePage() {
-    const [postData, setPostData] = useState(null);
+const [postData, setPostData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
