@@ -1,14 +1,14 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Navbar from '../components/NavbarRD';
 import Banner from '../components/Banner';
 import About from '../components/About';
-import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 import NewPost from './newPost';
 import '../styles/profile.css'
 import PostObject from '../partials/Post';
-import postData from "../data/posts.json";
+import fetchPostData from './fetchPostData';
 
 
 
@@ -21,7 +21,19 @@ import postData from "../data/posts.json";
 import {auth} from "../utils/firebase";
 
 function Profile() {
+  const [postData, setPostData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetchedData = await fetchPostData();
+      setPostData(fetchedData);
+    };
+
+    fetchData();
+  }, []);
   if (auth.currentUser){
+    
+
   return (
     <div className='account-page'>
       <Header />
@@ -61,7 +73,8 @@ function Profile() {
 
       <div className='account-posts'>
         <h2>Your Posts</h2>
-        {  
+        { 
+        postData === null? <h2>Loading</h2> :
         postData.map(post =>
             <PostObject contentJson = {post} key = {post.postID}></PostObject>)
         }
@@ -77,8 +90,7 @@ function Profile() {
       <Navbar />
       <h1>Thank you for visiting us, Please log in or sign up to view your profile</h1>
       
-      
-      <Contact />
+    
       </div>
     )
   };
