@@ -6,6 +6,17 @@ import profile3 from '../images/profileImages/pexels-leeloo-thefirst-4542178.jpg
 import profile4 from '../images/profileImages/pexels-sinitta-leunen-6652928.jpg';
 
 export default function SideBar () {
+    const fetchUserNames = async () => {
+        try {
+          const dbRef = collection(db,"Posts");
+          const snapshot = await getDocs(dbRef);
+          const usernamesArray = snapshot.docs.map((doc) => doc.data('usernames'));
+          return fetchedData;
+        } catch (error) {
+          console.log('Error fetching data:', error);
+          return null;
+        }
+      };
     return(
         <div className='sidebar'>
             <h2 className='profile-header'>Trending Profiles</h2>
@@ -30,6 +41,7 @@ export default function SideBar () {
                     <a href="/">Emma</a>
                     <a href="/">Rachel</a>
                     <a href="/">Timothy</a>
+                    
                 </div>
 
                 {/* <p>Lorem Ipsum Stuff</p> */}
