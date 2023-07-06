@@ -4,8 +4,11 @@ import profile1 from '../images/profileImages/pexels-brandan-saviour-2741701.jpg
 import profile2 from '../images/profileImages/pexels-ketut-subiyanto-4350178.jpg';
 import profile3 from '../images/profileImages/pexels-leeloo-thefirst-4542178.jpg';
 import profile4 from '../images/profileImages/pexels-sinitta-leunen-6652928.jpg';
-import { db } from "../utils/firebase";
-import {  collection, doc, setDoc } from "firebase/firestore";
+import { useEffect, useState } from 'react';
+import { addDoc, collection, setDoc, deleteDoc, doc, query, onSnapshot } from "firebase/firestore";
+import { v4 as uuidv4 } from 'uuid'; 
+import { db, app } from "../utils/firebase";
+import {getDocs} from "firebase/firestore";
 
 
 // can all images be placed in the database and pulled from there
@@ -15,6 +18,40 @@ const usernames = [];
 
 
 export default function SideBar () {
+
+    useEffect(() => {
+        const getData = async () => {
+          const data = await query(collection(db, "Posts"));
+     
+          onSnapshot(data, (querySnapshot) => {
+            const databaseInfo = [];
+            const dataIds = []
+     
+            querySnapshot.forEach((doc) => {
+              databaseInfo.push(doc.data().testData);
+              dataIds.push(doc.id)
+            });
+     
+            // setIds(dataIds)
+            // setInfo(databaseInfo)
+          });
+          
+
+          
+        } 
+     
+        getData()
+      }, [])
+//     // const postsRef2 = query(collection(db,"Posts"));
+//     const querySnapshot =  getDocs(collection(db, "Posts"));
+// querySnapshot.((doc) => {
+//   console.log(`${doc.userID}`);
+// });
+
+//     // const postsRef = db.collection('Posts');
+//     // console.log(postsRef);
+//     // console.log("Hello world", postsRef2)
+
     
     
     return(
