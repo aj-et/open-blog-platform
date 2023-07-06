@@ -4,6 +4,8 @@ import profile1 from '../images/profileImages/pexels-brandan-saviour-2741701.jpg
 import profile2 from '../images/profileImages/pexels-ketut-subiyanto-4350178.jpg';
 import profile3 from '../images/profileImages/pexels-leeloo-thefirst-4542178.jpg';
 import profile4 from '../images/profileImages/pexels-sinitta-leunen-6652928.jpg';
+import {collection, getDocs} from "firebase/firestore";
+import { db} from "../utils/firebase";
 
 export default function SideBar () {
     const fetchUserNames = async () => {
@@ -17,6 +19,7 @@ export default function SideBar () {
           return null;
         }
       };
+      fetchUserNames();
     return(
         <div className='sidebar'>
             <h2 className='profile-header'>Trending Profiles</h2>
@@ -36,6 +39,11 @@ export default function SideBar () {
                 <h2>Other Popular Profiles</h2>
 
                 <div className='profile-links'>
+                    
+
+                    {usernamesArray.map((user) =><a href= "/">{user}</a> )}
+                    {/* postData.map(post =>
+                        <PostObject contentJson = {post} key = {post.postID}></PostObject>) */}
                     <a href="/">Charles</a>
                     <a href="/">Bethany</a>
                     <a href="/">Emma</a>
