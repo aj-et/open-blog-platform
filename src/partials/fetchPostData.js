@@ -1,13 +1,12 @@
 import { db } from "../utils/firebase";
-import { collection } from "firebase/firestore";
-import { getDocs } from "firebase/firestore";
+import {collection, doc, getDoc} from "firebase/firestore"
 
 
 
 const fetchPostData = async () => {
     try {
       const dbRef = collection(db,"Posts");
-      const snapshot = await getDocs(dbRef);
+      const snapshot = await getDoc(dbRef);
       const fetchedData = snapshot.docs.map((doc) => doc.data());
       return fetchedData;
     } catch (error) {

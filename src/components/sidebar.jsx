@@ -6,9 +6,10 @@ import profile3 from '../images/profileImages/pexels-leeloo-thefirst-4542178.jpg
 import profile4 from '../images/profileImages/pexels-sinitta-leunen-6652928.jpg';
 import PostObject from '../partials/Post';
 import postData from "../data/posts.json";
-
+import fetchPostData from '../partials/fetchPostData';
 
 export default function SideBar () {
+    fetchPostData();
     return(
         <div className='sidebar'>
             <h2 className='profile-header'>Trending Profiles</h2>
@@ -29,8 +30,8 @@ export default function SideBar () {
 
                 <div className='profile-links'>
                 {  
-                    postData.map(post =>
-                        <PostObject contentJson = {post.userID}></PostObject>)
+                    postData.map(user =>
+                    <a href = "/">{user.userID}</a>)
                     }
                     <a href="/">Charles</a>
                     <a href="/">Bethany</a>
