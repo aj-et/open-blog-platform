@@ -31,13 +31,13 @@ export default function SideBar () {
                 <div className='profile-links'>
                 {  
                     postData.map(user =>
-                    <a href = "/">{user.userID}</a>)
+                    <a href = "#">{user.userID}</a>)
                     }
-                    <a href="/">Charles</a>
+                    {/* <a href="/">Charles</a>
                     <a href="/">Bethany</a>
                     <a href="/">Emma</a>
                     <a href="/">Rachel</a>
-                    <a href="/">Timothy</a>
+                    <a href="/">Timothy</a> */}
                 </div>
 
                 {/* <p>Lorem Ipsum Stuff</p> */}
