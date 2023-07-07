@@ -30,7 +30,7 @@ export default function SideBar () {
 
                 <div className='profile-links'>
                 {  
-                    postData.map(user =>
+                    postData.map((user) =>
                     <a href = "#">{user.userID}</a>)
                     }
                     {/* <a href="/">Charles</a>
