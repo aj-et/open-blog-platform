@@ -89,8 +89,8 @@ function Profile() {
     return(
       <div>
         <Header />
-      <Navbar />
-      <h1>Thank you for visiting us, Please log in or sign up to view your profile</h1>
+      {/* <Navbar /> */}
+      <h2>Please log in or sign up to view your profile.</h2>
       
     
       </div>
