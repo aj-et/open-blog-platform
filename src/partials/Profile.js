@@ -75,7 +75,9 @@ function Profile() {
         <h2>Your Posts</h2>
         { 
         postData === null? <h2>Loading</h2> :
+
         postData.map(post =>
+          
             <PostObject contentJson = {post} key = {post.postID}></PostObject>)
         }
       </div>
