@@ -9,6 +9,7 @@ import NewPost from './newPost';
 import '../styles/profile.css'
 import PostObject from '../partials/Post';
 import fetchPostData from './fetchPostData';
+import DeletablePostObject from './deletablePost';
 
 
 
@@ -78,7 +79,7 @@ function Profile() {
 
         postData.map(post =>
           
-            <PostObject contentJson = {post} key = {post.postID}></PostObject>)
+            <DeletablePostObject contentJson = {post} key = {post.postID}></DeletablePostObject>)
         }
       </div>
       
