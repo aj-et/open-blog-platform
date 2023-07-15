@@ -12,8 +12,6 @@ import fetchPostData from './fetchPostData';
 import DeletablePostObject from './deletablePost';
 
 
-
-
 // The biggest thing would be to have the account/user 
 // data to populate the name, contact, posts, etc.
 // But for now we have a static user and the 
@@ -89,9 +87,9 @@ function Profile() {
   else{
     return(
       <div>
-        <Header />
-      <Navbar />
-      <h1>Thank you for visiting us, Please log in or sign up to view your profile</h1>
+        {/* <Header /> */}
+      {/* <Navbar /> */}
+      <h2>Please log in or sign up to view your profile.</h2>
       
     
       </div>

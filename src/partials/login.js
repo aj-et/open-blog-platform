@@ -29,7 +29,7 @@ export default function Login() {
             console.log(error);
         });
         
-        // This will empy out the fields after clicking button
+        // This will empty out the fields after clicking button
         setEmail('');
         setPassword('');
     };

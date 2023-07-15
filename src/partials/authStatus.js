@@ -30,7 +30,7 @@ function  AuthStatus(){
     }
     return(
 
-        <nav className="nav-bar">
+        <nav className="nav-links">
             { authUser ? <Link to='/' onClick={userSignOut}>Logout</Link> : <Link to='/login'>Login</Link> }
         </nav>
 
