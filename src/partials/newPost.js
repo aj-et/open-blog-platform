@@ -38,7 +38,8 @@ const NewPost = () => {
             content: content,
             like:like,
             shares:shares,
-            userID: userID
+            userID: userID,
+            postId:postId
             // userID: userID,
             });
             console.log("New post added successfully!");

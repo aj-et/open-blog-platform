@@ -6,23 +6,6 @@ import { Link } from 'react-router-dom';
 
 
 
-// const getStatus = () =>{
-//     if (authUser.current){
-//         return true
-//     }
-//     else{
-//         return false
-//     }
-// }
-
-// const getUser = () =>{
-//     if (authUser.current){
-//         return authUser.current
-//     }
-//     else{
-//         return "notLoggedIn"
-//     }
-// }
 function  AuthStatus(){
     const [authUser, setAuthUser] = useState(null);
 
