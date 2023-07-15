@@ -89,7 +89,7 @@ function Profile() {
   else{
     return(
       <div>
-        <Header />
+        {/* <Header /> */}
       {/* <Navbar /> */}
       <h2>Please log in or sign up to view your profile.</h2>
       
